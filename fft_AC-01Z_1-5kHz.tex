@@ -1,0 +1,148 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{sienna1279963}{RGB}{127,99,63}
+\pgfplotsset{every tick label/.append style={font=\tiny}}
+
+\pgfplotsset{ 
+  every non boxed x axis/.append style={x axis line style=-},
+  every non boxed y axis/.append style={y axis line style=-}} 
+
+\begin{groupplot}[group style={group size=1 by 4,
+  vertical sep=0cm}]
+  \nextgroupplot[
+    legend cell align={left},
+    legend style={
+      fill opacity=0.8,
+      draw opacity=1,
+      text opacity=1,
+      at={(0.66,0.97)},
+      anchor=north west,
+      draw=lightgray204,
+      font=\tiny,
+    },
+    scaled x ticks=manual:{}{\pgfmathparse{#1}},
+    tick align=inside,
+    tick pos=left,
+    x grid style={darkgray176},
+    xmin=1000, xmax=5000,
+    xtick style={color=black},
+    xticklabels={},
+    y grid style={darkgray176},
+    ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+    ymin=0, ymax=0.0001,
+    ytick style={color=black},
+    height=35mm,
+    width=80mm,
+    xticklabels = {, , },
+    scaled y ticks=base 10:0,
+    ytick={0.00002, 0.00004, 0.00006, 0.00008},
+  ]
+  \input{fft/data15_3.tex}
+  \addlegendentry{wc = 10.93\%}
+
+  \nextgroupplot[
+    legend cell align={left},
+    legend style={
+      fill opacity=0.8,
+      draw opacity=1,
+      text opacity=1,
+      at={(0.66,0.97)},
+      anchor=north west,
+      draw=lightgray204,
+      font=\tiny,
+    },
+    scaled x ticks=manual:{}{\pgfmathparse{#1}},
+    tick align=inside,
+    tick pos=left,
+    x grid style={darkgray176},
+    xmin=1000, xmax=5000,
+    xtick style={color=black},
+    xticklabels={},
+    y grid style={darkgray176},
+    ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+    ymin=0, ymax=0.0001,
+    ytick style={color=black},
+    height=35mm,
+    width=80mm,
+    xticklabels = {, , },
+    scaled y ticks=base 10:0,
+    ytick={0.00002, 0.00004, 0.00006, 0.00008},
+  ]
+  \input{fft/data30_3.tex}
+  \addlegendentry{wc = 21.75\%}
+
+  \nextgroupplot[
+    legend cell align={left},
+    legend style={
+      fill opacity=0.8,
+      draw opacity=1,
+      text opacity=1,
+      at={(0.66,0.97)},
+      anchor=north west,
+      draw=lightgray204,
+      font=\tiny,
+    },
+    scaled x ticks=manual:{}{\pgfmathparse{#1}},
+    tick align=inside,
+    tick pos=left,
+    x grid style={darkgray176},
+    xmin=1000, xmax=5000,
+    xtick style={color=black},
+    xticklabels={},
+    y grid style={darkgray176},
+    ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+    ymin=0, ymax=0.0001,
+    ytick style={color=black},
+    height=35mm,
+    width=80mm,
+    xticklabels = {, , },
+    ytick={0.00002, 0.00004, 0.00006, 0.00008},
+    scaled y ticks=base 10:0,
+  ]
+  \input{fft/data50_3.tex}
+  \addlegendentry{wc = 55.21\%}
+  \nextgroupplot[
+    legend cell align={left},
+    legend style={
+      fill opacity=0.8,
+      draw opacity=1,
+      text opacity=1,
+      at={(0.66,0.97)},
+      anchor=north west,
+      draw=lightgray204,
+      font=\tiny,
+    },
+    scaled x ticks=manual:{}{\pgfmathparse{#1}},
+    tick align=inside,
+    tick pos=left,
+    x grid style={darkgray176},
+    xmin=1000, xmax=5000,
+    xtick style={color=black},
+    xticklabels={},
+    y grid style={darkgray176},
+    ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+    ymin=0, ymax=0.0001,
+    ytick style={color=black},
+    height=35mm,
+    width=80mm,
+    xticklabels = {, , },
+    ytick={0.00002, 0.00004, 0.00006, 0.00008},
+    scaled y ticks=base 10:0,
+    xticklabels = {1000, 2000, 3000, 4000, 5000},
+    xtick={1000, 2000, 3000, 4000, 5000},
+    xlabel={\scriptsize frequency [Hz]},
+  ]
+  \input{fft/data57_3.tex}
+  \addlegendentry{wc = 72.90\%}
+
+
+
+\end{groupplot}
+
+
+
+
+\end{tikzpicture}

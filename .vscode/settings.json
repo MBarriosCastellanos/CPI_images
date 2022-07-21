@@ -1,0 +1,99 @@
+{
+    "cSpell.words": [
+      "Baggins",
+      "Biofuels",
+      "biphasic",
+      "CEPETRO",
+      "colordata",
+      "colormap",
+      "CTAN",
+      "darkgray",
+      "darkslategray",
+      "dataset",
+      "datasets",
+      "downhole",
+      "dtch",
+      "electromechanical",
+      "elsevier",
+      "Engelen",
+      "Galv",
+      "gini",
+      "Grassian",
+      "Inkscape",
+      "interpretability",
+      "Johan",
+      "lightgray",
+      "MCRT",
+      "monoblock",
+      "monophasic",
+      "MSSP",
+      "multiphase",
+      "Muralidharan",
+      "mymap",
+      "overfit",
+      "overfitting",
+      "Pbox",
+      "pedregosa",
+      "pred",
+      "queiroz",
+      "rosemount",
+      "Sakthivel",
+      "semithick",
+      "shapelets",
+      "sklearn",
+      "summarised",
+      "thoerotical",
+      "tikzplotlib",
+      "unicamp",
+      "unseeable",
+      "xlabel",
+      "xmajorgrids",
+      "xmax",
+      "xmin",
+      "xtick",
+      "xticklabels",
+      "ylabel",
+      "ymajorgrids",
+      "ymax",
+      "ymin",
+      "ymode",
+      "ytick",
+      "yticklabel",
+      "yticklabels",
+      "zerofill"
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "cSpell.language": "en"
+}

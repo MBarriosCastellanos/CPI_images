@@ -1,0 +1,199 @@
+% Document Class ================================================================
+\documentclass[final,5p,times]{elsarticle}
+% Preamble ======================================================================
+  %=================================== Equations ================================
+  \usepackage{amsmath}            % maths
+  %=================================== Images ===================================
+  \usepackage{float}              % Make the images float
+  \usepackage{subcaption}         % Sub-Plots
+  \usepackage{transparent}
+  %==================================== Tikz ====================================
+  \usepackage{tikz}               % Construct tikz plots
+    \usetikzlibrary{external}
+    \tikzexternalize              %
+  \usepackage{pgfplots}           % For tikz plots use pgf
+  \pgfplotsset{compat=1.14}
+  \usepgfplotslibrary{groupplots} % Use Libraries for group pgf
+  %\usetikzlibrary{calc}
+  %\usetikzlibrary{shapes.geometric, arrows, mindmap, external} % Diagrams in Tikz
+
+% !TEX program = shell-escape
+% Definition ====================================================================
+\newlength\figureheight
+\newlength\figurewidth
+\setlength\figurewidth{8.3cm}
+\setlength\figureheight{6cm}
+\newcommand{\includetikz}[1]{%
+  \tikzsetnextfilename{#1}%
+  \input{#1.tex}%
+}
+
+\begin{document} 
+  %\pgfplotsset{compat=newest}
+  \pgfplotsset{compat=1.11}
+  \begin{figure}[H]   % Figure 1
+    \centering
+    %\includegraphics[keepaspectratio,width=5cm]{images/1654542416421.pdf}
+    \input{layout_vib.tex}
+    \caption{Sensors Distribution.}
+    \label{fig.2}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 1
+    \centering
+    \includetikz{H}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 2
+    \centering
+    \includetikz{Ta}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 2
+    \centering
+    \includetikz{mu}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 3
+    \centering
+    \includetikz{sigmoid}
+    \caption{40 [Hz], 169 [mPa-s], 28 [\(\displaystyle \mathrm{m^3/h}\)]}
+  \end{figure}
+  % =============================================================================
+  \begin{figure*}[!ht]      %Figure 4.1
+    \centering
+    \begin{tabular}{l}
+      \begin{subfigure}{7.8cm}
+        \includetikz{AC-02}
+      \end{subfigure}
+      ~\hspace{-20mm}~
+      \begin{subfigure}{8.3cm}
+        \includetikz{AC-03}
+      \end{subfigure}
+      \\
+      ~\vspace{-6mm}~
+      \\
+      \begin{subfigure}{7.8cm}
+        \includetikz{AC-04}
+      \end{subfigure}
+      ~\hspace{-20mm}~
+      \begin{subfigure}{8.3cm}
+        \includetikz{AC-05}
+      \end{subfigure}
+    \end{tabular}
+  \end{figure*}
+  % =============================================================================
+  %\begin{figure*}[!ht]      %Figure 4.2
+    %\centering
+    %\begin{tabular}{l}
+    %  \begin{subfigure}{5.9cm}
+    %    \includetikz{AC-01X}
+    %  \end{subfigure}
+    %  ~\hspace{-8mm}~
+    %  \begin{subfigure}{4.8cm}
+    %  \end{subfigure}
+    %  ~\hspace{-8mm}~
+    %  \begin{subfigure}{6.2cm}
+    %    \includetikz{AC-01Z}
+    %  \end{subfigure}
+    %  \\
+    %  ~\vspace{-6mm}~
+    %  \\
+    %  \begin{subfigure}{5.9cm}
+    %    \includetikz{AC-06X}
+    %  \end{subfigure}
+    %  ~\hspace{-8mm}~
+    %  \begin{subfigure}{4.8cm}
+    %    \includetikz{AC-06Y}
+    %  \end{subfigure}
+    %  ~\hspace{-8mm}~
+    %  \begin{subfigure}{6.2cm}
+    %    \includetikz{AC-06Z}
+    %  \end{subfigure}
+    %  \\
+    %\end{tabular}
+  %\end{figure*}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 5
+    \centering
+    \includetikz{fft_AC-04_0-750Hz}
+    \caption{AC-04 0-750 Hz}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 6
+    \centering
+    \includetikz{fft_AC-01Z_1-5kHz}
+    \caption{AC-01Z 1-5kHz}
+  \end{figure}
+  % =============================================================================
+  \clearpage
+  \begin{figure}[H]         %Figure 7
+    \centering
+    \includetikz{ranges_AC-04_6_kHz}
+    \includetikz{ranges_AC-04_1_kHz}
+    \caption{Analysis ranges AC-04 sensor at 72.9\% water cut}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 8
+    \centering
+    \includetikz{pearson1}
+    \caption{Pearson correlation with the dimensionless torque}
+    \label{fig.8} 
+  \end{figure}
+  \begin{figure}[H]         %Figure 8.1
+    \centering
+    \includetikz{pearson2}
+    \caption{Dimensionless torque vs rms of fft between 0 - 250 Hz for AC-01Y sensor}
+    \label{fig.8.1} 
+  \end{figure}
+  % =============================================================================
+  \begin{figure*}[!ht]      %Figure 8
+    \centering
+    \includetikz{fft_rms_0-250Hz_AC-01Y}
+  \end{figure*}
+  % =============================================================================
+  \begin{figure*}[!ht]      %Figure 9
+    \centering
+    \includetikz{fft_rms_0-250Hz_AC-06Z}
+  \end{figure*}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 10
+    \centering
+    \includetikz{logit_fft_rms_0-250Hz_AC-01Y}
+    \caption{AC-01Y}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 11
+    \centering
+    \includetikz{logit_fft_rms_0-250Hz_AC-04}
+    \caption{AC-04}
+  \end{figure}
+  %% =============================================================================
+  \begin{figure}[H]         %Figure 12
+    \centering
+    \includetikz{logit_fft_rms_0-250Hz_AC-06Y}
+    \caption{AC-06Y}
+  \end{figure}
+  % =============================================================================
+  \begin{figure}[H]         %Figure 14
+    \centering
+    \includetikz{comparisson}
+  \end{figure}
+  % =============================================================================
+  %\begin{figure}[H]         %Figure 15
+  %  \centering
+  %  \setlength\figurewidth{7cm}
+  %  \setlength\figureheight{7cm}
+  %  \setlength\figurewidth{\figurewidth}
+  %  \includetikz{bound_train}
+  %\end{figure}
+  % =============================================================================
+  %\begin{figure}[H]         %Figure 16
+  %  \centering
+  %  \setlength\figurewidth{7cm}
+  %  \setlength\figureheight{7cm}
+  %  \setlength\figurewidth{\figurewidth}
+  %  \includetikz{bound_test}
+  %\end{figure}
+
+\end{document}

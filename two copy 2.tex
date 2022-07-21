@@ -1,0 +1,28 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\begin{axis}[
+tick pos=left,
+]
+\addplot [mark=*]
+    table{%
+    30.2020202020202	981.119507129853 
+    33.2323232323232	759.949818761647
+    38.2828282828283	512.697614291346
+    46.3636363636364	290.781593548699
+    49.7979797979798	232.07278860762
+    };
+\end{axis}
+
+\begin{axis}[
+axis y line=right,
+xticklabels = { , , },
+]
+\addplot [color=red]
+    table{%
+    30.2020202020202	942.711313131313
+    49.7979797979798	930.228686868687
+    };
+\end{axis}
+
+\end{tikzpicture}

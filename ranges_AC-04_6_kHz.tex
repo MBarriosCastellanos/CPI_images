@@ -1,0 +1,62 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+  \definecolor{darkgray176}{RGB}{176,176,176}
+  \definecolor{lightgray204}{RGB}{204,204,204}
+  \definecolor{sienna1279963}{RGB}{127,99,63}
+  \pgfplotsset{every tick label/.append style={font=\tiny}}
+  
+  \pgfplotsset{ 
+    every non boxed x axis/.append style={x axis line style=-},
+    every non boxed y axis/.append style={y axis line style=-}} 
+  
+  \begin{groupplot}[group style={group size=1 by 1,
+    vertical sep=0cm}]
+    \nextgroupplot[
+      legend cell align={left},
+      legend style={
+        fill opacity=0.8,
+        draw opacity=1,
+        text opacity=1,
+        at={(0.66,0.97)},
+        anchor=north west,
+        draw=lightgray204,
+        font=\tiny,
+      },
+      scaled x ticks=manual:{}{\pgfmathparse{#1}},
+      tick align=outside,
+      tick pos=left,
+      x grid style={darkgray176},
+      xmin=0, xmax=5000,
+      xtick style={color=black},
+      y grid style={darkgray176},
+      ylabel=\textcolor{black}{\scriptsize $\chi$ [$\mathrm{m/s^2}$]},
+      %xlabel=\textcolor{black}{\scriptsize frequency [Hz]},
+      ytick style={color=black},
+      height=60mm,
+      width=88mm,
+      xticklabels = {0, 1000, 2000, 3000, 4000, 5000},
+      xtick={0, 1000, 2000, 3000, 4000, 5000},
+      scaled y ticks=base 10:0,
+      ytick={1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0},
+      ymin=3e-05, ymax=1e0,
+      ymode=log,
+    ]
+    \input{fft/data72_6000.tex}
+    %\addlegendentry{wc = 72.9\%}
+  
+    \draw[<->] (0,3e-1) -- (5000,3e-1) node[pos=0.5, above]   {$\boldsymbol{\chi_a}$};
+    \draw[<->] (0,8e-2) -- (2000,8e-2) node[pos=0.5,above]    {$\boldsymbol{\chi_b}$};
+    \draw[<->] (2000,6e-2) -- (4000,6e-2) node[pos=0.5,above] {$\boldsymbol{\chi_c}$};
+    \draw[<->] (0,1e-2) -- (1000,1e-2) node[pos=0.5,above]    {$\boldsymbol{\chi_d}$};
+    \draw[<->] (1000,8e-3) -- (2000,8e-3) node[pos=0.5,above] {$\boldsymbol{\chi_e}$};
+    \draw[<->] (2000,1e-2) -- (3000,1e-2) node[pos=0.5,above] {$\boldsymbol{\chi_f}$};
+    \draw[<->] (3000,8e-3) -- (4000,8e-3) node[pos=0.5,above] {$\boldsymbol{\chi_g}$};
+    \draw[<->] (4000,1e-2) -- (5000,1e-2) node[pos=0.5,above] {$\boldsymbol{\chi_h}$};
+
+    
+
+  \end{groupplot}
+
+  \end{tikzpicture}
+  

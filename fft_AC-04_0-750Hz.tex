@@ -1,0 +1,482 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{sienna1279963}{RGB}{127,99,63}
+\pgfplotsset{every tick label/.append style={font=\tiny}}
+
+\pgfplotsset{ 
+  every non boxed x axis/.append style={x axis line style=-},
+  every non boxed y axis/.append style={y axis line style=-}}
+
+
+\begin{groupplot}[group style={group size=1 by 4
+  , vertical sep=0cm}]
+  \nextgroupplot[
+  axis y line=right,
+  log basis y={10},
+  tick align=inside,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick pos=left,
+  xtick style={color=black},
+  y grid style={darkgray176},
+  ylabel=\textcolor{sienna1279963}{\scriptsize $\chi$ [$\mathrm{m/s^2}$]},
+  ymin=6e-05, ymax=0.4,
+  ymode=log,
+  ytick pos=right,
+  ytick style={color=black},
+  yticklabel style={anchor=west},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  enlarge x limits=false,
+  every axis plot post/.append style={mark=none},
+  const plot,
+  y tick label style={color=sienna1279963},
+  ]
+  %\addplot [semithick, sienna1279963, opacity=0.6]
+  %table {%
+  %};
+  \input{fft/data15.tex}
+
+  
+  \nextgroupplot[
+  axis y line=right,
+  log basis y={10},
+  tick align=inside,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick pos=left,
+  xtick style={color=black},
+  y grid style={darkgray176},
+  ylabel=\textcolor{sienna1279963}{\scriptsize $\chi$ [$\mathrm{m/s^2}$]},
+  ymin=6e-05, ymax=0.4,
+  ymode=log,
+  ytick pos=right,
+  ytick style={color=black},
+  yticklabel style={anchor=west},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  y tick label style={color=sienna1279963},
+  ]
+  %\addplot [semithick, sienna1279963, opacity=0.6]
+  %table {%
+  %};
+  \input{fft/data30.tex}
+
+  
+  \nextgroupplot[
+  axis y line=right,
+  log basis y={10},
+  tick align=inside,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick pos=left,
+  xtick style={color=black},
+  y grid style={darkgray176},
+  ylabel=\textcolor{sienna1279963}{\scriptsize $\chi$ [$\mathrm{m/s^2}$]},
+  ymin=6e-05, ymax=0.4,
+  ymode=log,
+  ytick pos=right,
+  ytick style={color=black},
+  yticklabel style={anchor=west},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  y tick label style={color=sienna1279963},
+  ]
+  %\addplot [semithick, sienna1279963, opacity=0.6]
+  %table {%
+  %10.0666794177939 6.84979625433815e-06
+  %594.867420165399 0.000269212821814746
+  %748.800948481201 8.13091278830242e-05
+  %};
+  \input{fft/data50.tex}
+
+  
+  \nextgroupplot[
+  axis y line=right,
+  log basis y={10},
+  tick align=inside,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick pos=left,
+  xtick style={color=black},
+  y grid style={darkgray176},
+  ylabel=\textcolor{sienna1279963}{\scriptsize $\chi$ [$\mathrm{m/s^2}$]},
+  ymin=6e-05, ymax=0.4,
+  ymode=log,
+  ytick pos=right,
+  ytick style={color=black},
+  yticklabel style={anchor=west},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  y tick label style={color=sienna1279963},
+  ]
+  
+  %\addplot [semithick, sienna1279963, opacity=0.6]
+  %table{
+  %10.0666794177939 6.84979625433815e-06
+  %594.867420165399 0.000269212821814746
+  %748.800948481201 8.13091278830242e-05
+  %};
+  \input{fft/data57.tex}
+
+  
+\end{groupplot}
+    
+\begin{groupplot}[group style={group size=1 by 4,
+  vertical sep=0cm}]
+  \nextgroupplot[
+  legend cell align={left},
+  legend style={
+    fill opacity=0.8,
+    draw opacity=1,
+    text opacity=1,
+    at={(0.66,0.97)},
+    anchor=north west,
+    draw=lightgray204,
+    font=\tiny,
+  },
+  scaled x ticks=manual:{}{\pgfmathparse{#1}},
+  tick align=inside,
+  tick pos=left,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick style={color=black},
+  xticklabels={},
+  y grid style={darkgray176},
+  ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+  ymin=0, ymax=0.0247898155041266,
+  ytick style={color=black},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  %scaled y ticks=base 10:0,
+  ytick={0.00551, 0.01102, 0.01653, 0.02204},
+  yticklabel style={
+    scaled ticks=false,
+    /pgf/number format/fixed,
+    /pgf/number format/precision=3
+    },
+  ]
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:29.6669601163339,0)
+  --(axis cs:29.6669601163339,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:59.3339202326678,0)
+  --(axis cs:59.3339202326678,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:89.0008803490018,0)
+  --(axis cs:89.0008803490018,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:118.667840465336,0)
+  --(axis cs:118.667840465336,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:148.33480058167,0)
+  --(axis cs:148.33480058167,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:178.001760698004,0)
+  --(axis cs:178.001760698004,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:207.668720814337,0)
+  --(axis cs:207.668720814337,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:415.337441628675,0)
+  --(axis cs:415.337441628675,0.0247898155041266);
+
+  \addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+  table {%
+  29.8000377467145 0.00323793215494416
+  59.8667424978738 0.00259989662913517
+  104.333465489056 0.00108004928451146
+  119.200150986858 0.00134005432629876
+  122.06682128464 0.0010062387388624
+  208.600264227001 0.0220353915592236
+  208.800264480335 0.00457581420823926
+  208.933597982557 0.00327129077532133
+  209.266931738114 0.00204978912101952
+  323.533743142741 0.00179502701274229
+  417.200528454003 0.00131853855366763
+  };
+  %\addplot [semithick, black]
+  %table {%
+  %};
+  \input{fft/data15_2.tex}
+  \addlegendentry{wc = 10.93\%}
+
+  \nextgroupplot[
+  legend cell align={left},
+  legend style={
+    fill opacity=0.8,
+    draw opacity=1,
+    text opacity=1,
+    at={(0.66,0.97)},
+    anchor=north west,
+    draw=lightgray204,
+    font=\tiny,
+  },
+  scaled x ticks=manual:{}{\pgfmathparse{#1}},
+  tick align=inside,
+  tick pos=left,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick style={color=black},
+  xticklabels={},
+  y grid style={darkgray176},
+  ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+  ymin=0, ymax=0.0247898155041266,
+  ytick style={color=black},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  %scaled y ticks=base 10:0,
+  ytick={0.00551, 0.01102, 0.01653, 0.02204},
+  yticklabel style={
+    scaled ticks=false,
+    /pgf/number format/fixed,
+    /pgf/number format/precision=3
+    },
+  ]
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:29.7176982349097,0)
+  --(axis cs:29.7176982349097,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:59.4353964698194,0)
+  --(axis cs:59.4353964698194,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:89.1530947047291,0)
+  --(axis cs:89.1530947047291,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:118.870792939639,0)
+  --(axis cs:118.870792939639,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:148.588491174548,0)
+  --(axis cs:148.588491174548,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:178.306189409458,0)
+  --(axis cs:178.306189409458,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:208.023887644368,0)
+  --(axis cs:208.023887644368,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:416.047775288736,0)
+  --(axis cs:416.047775288736,0.0247898155041266);
+
+  \addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+  table {%
+  29.8667044978257 0.0032446243715523
+  60.0000760000963 0.0019807307419134
+  208.200263720334 0.00149838959080023
+  208.666930978113 0.00249051426640797
+  209.06693148478 0.019346255019165
+  209.466931991447 0.00224624360588078
+  324.00041040052 0.00111794779906234
+  324.200410653854 0.00144804926968358
+  374.533807742823 0.0011313092932794
+  };
+  %\addplot [semithick, black]
+  %table {%
+  %};
+  \input{fft/data30_2.tex}
+  \addlegendentry{wc = 21.75\%}
+
+  \nextgroupplot[
+  legend cell align={left},
+  legend style={
+    fill opacity=0.8,
+    draw opacity=1,
+    text opacity=1,
+    at={(0.66,0.97)},
+    anchor=north west,
+    draw=lightgray204,
+    font=\tiny,
+  },
+  scaled x ticks=manual:{}{\pgfmathparse{#1}},
+  tick align=inside,
+  tick pos=left,
+  x grid style={darkgray176},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick style={color=black},
+  xticklabels={},
+  y grid style={darkgray176},
+  ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+  ymin=0, ymax=0.0247898155041266,
+  ytick style={color=black},
+  height=35mm,
+  width=80mm,
+  xticklabels = {, , },
+  ytick={0.00551, 0.01102, 0.01653, 0.02204},
+  %scaled y ticks=base 10:0,
+  yticklabel style={
+    scaled ticks=false,
+    /pgf/number format/fixed,
+    /pgf/number format/precision=3
+    },
+  ]
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:29.9410133884416,0)
+  --(axis cs:29.9410133884416,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:59.8820267768833,0)
+  --(axis cs:59.8820267768833,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:89.8230401653249,0)
+  --(axis cs:89.8230401653249,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:119.764053553767,0)
+  --(axis cs:119.764053553767,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:149.705066942208,0)
+  --(axis cs:149.705066942208,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:179.64608033065,0)
+  --(axis cs:179.64608033065,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:209.587093719092,0)
+  --(axis cs:209.587093719092,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:419.174187438183,0)
+  --(axis cs:419.174187438183,0.0247898155041266);
+
+  \addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+  table {%
+  30.0667047511593 0.00331104286729354
+  57.7334064623149 0.00334215651389873
+  60.1334095023187 0.00133611171796687
+  60.3334097556524 0.00219268391983721
+  90.2667810045893 0.00227426202230162
+  123.200156053531 0.00206006074491717
+  150.400190506908 0.00532438482765473
+  180.533562009179 0.00113094352242072
+  210.600266760338 0.00962847985600148
+  326.400413440524 0.00156103946775513
+  346.400438773889 0.00106283848802694
+  391.067162018405 0.00108266178880967
+  421.200533520676 0.00173552956950055
+  601.667428778743 0.00100350261782845
+  602.334096289855 0.00105473230436725
+  };
+  %\addplot [semithick, black]
+  %table {%
+  %};
+  \input{fft/data50_2.tex}
+  \addlegendentry{wc = 55.21\%}
+
+  \nextgroupplot[
+  legend cell align={left},
+  legend style={
+    fill opacity=0.8,
+    draw opacity=1,
+    text opacity=1,
+    at={(0.66,0.97)},
+    anchor=north west,
+    draw=lightgray204,
+    font=\tiny,
+  },
+  tick align=inside,
+  tick pos=left,
+  x grid style={darkgray176},
+  xlabel={\scriptsize frequency [Hz]},
+  xmin=9.93334591557149, xmax=750.000950001203,
+  xtick style={color=black},
+  y grid style={darkgray176},
+  ylabel=\textcolor{black}{\scriptsize $x$ [$\mathrm{m/s^2}$]},
+  ymin=0, ymax=0.0247898155041266,
+  ytick style={color=black},
+  height=35mm,
+  width=80mm,
+  ytick={0.00551, 0.01102, 0.01653, 0.02204},
+  %scaled y ticks=base 10:0,
+  yticklabel style={
+    scaled ticks=false,
+    /pgf/number format/fixed,
+    /pgf/number format/precision=3
+    },
+  ]
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:29.9455416583404,0)
+  --(axis cs:29.9455416583404,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:59.8910833166808,0)
+  --(axis cs:59.8910833166808,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:89.8366249750213,0)
+  --(axis cs:89.8366249750213,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:119.782166633362,0)
+  --(axis cs:119.782166633362,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:149.727708291702,0)
+  --(axis cs:149.727708291702,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 1.5pt off 2.475pt]
+  (axis cs:179.673249950043,0)
+  --(axis cs:179.673249950043,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:209.618791608383,0)
+  --(axis cs:209.618791608383,0.0247898155041266);
+
+  \path [draw=lightgray204, semithick, dash pattern=on 5.55pt off 2.4pt]
+  (axis cs:419.237583216766,0)
+  --(axis cs:419.237583216766,0.0247898155041266);
+
+  \addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+  table {%
+  30.0667047511593 0.00338975763406016
+  57.7334064623149 0.00341022372954698
+  60.2000762534299 0.0013409988679587
+  60.3334097556524 0.00259925199259939
+  123.200156053531 0.00119536560509723
+  150.466857258019 0.00448734309982359
+  180.533562009179 0.00140444946683339
+  210.600266760338 0.00827955431162205
+  240.733638262608 0.00109348474192674
+  326.400413440524 0.0017866475152922
+  346.400438773889 0.0040044419962306
+  391.133828769516 0.00175959680756448
+  421.267200271787 0.00337493024457323
+  571.667390778695 0.00177586248617935
+  631.867467032125 0.00113988256149659
+  };
+  %\addplot [semithick, black]
+  %table {%
+  %};
+  \input{fft/data57_2.tex}
+  \addlegendentry{wc = 72.90\%}
+\end{groupplot}
+
+
+
+
+\end{tikzpicture}

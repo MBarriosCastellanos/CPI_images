@@ -1,0 +1,89 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'layout_vib.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{556.69812012bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.73034101)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{layout_vib.pdf}}%
+    \put(0.73042815,0.24130759){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-01X\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{layout_vib.pdf}}%
+    \put(0.74667915,0.44527821){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-02\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{layout_vib.pdf}}%
+    \put(0.74667915,0.68860162){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-03\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{layout_vib.pdf}}%
+    \put(0.74667915,0.9000542){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-04\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{layout_vib.pdf}}%
+    \put(0.74667915,1.1114022){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-05\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{layout_vib.pdf}}%
+    \put(0.73042815,1.29019141){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-06X\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{layout_vib.pdf}}%
+    \put(0.18140381,0.33216065){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-01Y\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{layout_vib.pdf}}%
+    \put(0.55845599,0.13311597){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-01Z\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{layout_vib.pdf}}%
+    \put(0.55845599,1.41678529){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-06Z\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{layout_vib.pdf}}%
+    \put(0.18140381,1.2235871){\color[rgb]{0.84705882,0.65882353,0.41960784}\transparent{0.98000002}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AC-06Y\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{layout_vib.pdf}}%
+    \put(0.28298392,0.17701048){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{p}\end{tabular}}}}%
+    \put(0.30217466,0.15906077){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{layout_vib.pdf}}%
+    \put(0.28164208,1.14355275){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{p}\end{tabular}}}}%
+    \put(0.30083282,1.12560304){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{9}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{layout_vib.pdf}}%
+    \put(0.5649154,0.04697664){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{T}\end{tabular}}}}%
+    \put(0.58780164,0.04011345){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{2}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{layout_vib.pdf}}%
+    \put(0.50878772,1.67890617){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{T}\end{tabular}}}}%
+    \put(0.53167396,1.67204298){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{3}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

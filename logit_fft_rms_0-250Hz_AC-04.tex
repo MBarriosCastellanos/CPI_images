@@ -25,14 +25,14 @@
   xtick style={color=black},
   xticklabels={},
   y grid style={darkgray176},
-  ylabel={\scriptsize $\ell\left ( \left [{\mathbb{R} \left (\boldsymbol{\chi}_{\{ 9 \}} \right )}, 30 \right ] \right )$},
+  ylabel={\scriptsize $\ell$ at 30 [Hz]},
   ymajorgrids,
-  ymin=-0.05, ymax=1.05,
+  ymin=-0.1, ymax=1.1,
   ytick style={color=black},
   height=35mm,
-  width=89mm,
+  width=87mm,
 ytick={0,  0.5,  1.0},
-yticklabels= {0\%, 50\%, 100\%},
+yticklabels= {o/w 0.0, 0.5,  w/o 1.0},
   ]
 \path [draw=black, semithick, dash pattern=on 1.5pt off 2.475pt, line width=1]
 (axis cs:4.27249658338428,-0.1)
@@ -1434,14 +1434,14 @@ xmin=3.766741505949, xmax=4.87138218294232,
 xtick style={color=black},
 xticklabels={},
 y grid style={darkgray176},
-ylabel={\scriptsize $\ell\left ( \left [{\mathbb{R} \left (\boldsymbol{\chi}_{\{ 9 \}} \right )}, 40 \right ] \right )$},
+ylabel={\scriptsize $\ell$ at 40 [Hz]},
 ymajorgrids,
-ymin=-0.05, ymax=1.05,
+ymin=-0.1, ymax=1.1,
 ytick style={color=black},
 height=35mm,
-width=89mm,
+width=87mm,
 ytick={0,  0.5,  1.0},
-yticklabels= {0\%, 50\%, 100\%},
+yticklabels= {o/w 0.0, 0.5,  w/o 1.0},
 ]
 \path [draw=black, semithick, dash pattern=on 1.5pt off 2.475pt, line width=1]
 (axis cs:4.12677990642116,-0.1)
@@ -2629,14 +2629,14 @@ xmajorgrids,
 xmin=3.766741505949, xmax=4.87138218294232,
 xtick style={color=black},
 y grid style={darkgray176},
-ylabel={\scriptsize $\ell\left ( \left [{\mathbb{R} \left (\boldsymbol{\chi}_{\{ 9 \}} \right )}, 50 \right ] \right )$},
+ylabel={\scriptsize $\ell$ at 50 [Hz]},
 ymajorgrids,
-ymin=-0.05, ymax=1.05,
+ymin=-0.1, ymax=1.1,
 ytick style={color=black},
 height=35mm,
-width=89mm,
+width=87mm,
 ytick={0,  0.5,  1.0},
-yticklabels= {0\%, 50\%, 100\%},
+yticklabels= {o/w 0.0, 0.5,  w/o 1.0},
 legend cell align={right},
   legend style={
     fill opacity=0.8,
@@ -2645,14 +2645,14 @@ legend cell align={right},
     anchor=north west,
     draw=lightgray204,
     %legend pos=outer south east ,
-    at ={(0.65, 0.8)},
+    at ={(0.71, 0.85)},
     font=\tiny,
     legend columns = 1
   },
 ]
-\path [draw=black, semithick, dash pattern=on 1.5pt off 2.475pt, line width=1]
-(axis cs:3.98106322945806,-0.1)
---(axis cs:3.98106322945806,1.1);
+%\path [draw=black, semithick, dash pattern=on 1.5pt off 2.475pt, line width=1]
+%(axis cs:3.98106322945806,-0.1)
+%--(axis cs:3.98106322945806,1.1);
 
 \addplot [semithick, sienna1279963, opacity=0.5, mark=*, mark size=1.5, mark options={solid}, only marks]
 table {%
@@ -3766,9 +3766,18 @@ table {%
 4.8702764365189 1
 4.87138218294232 1
 };
+
+
+\addplot [draw=black, semithick, dash pattern=on 1.5pt off 2.475pt, line width=1]
+table {%
+3.98106322945806 -0.1
+3.98106322945806 1.1
+};
+
 \addlegendentry{\scriptsize test}
 \addlegendentry{\scriptsize train}
-\addlegendentry{\scriptsize $\ell\left ( \left [{\mathbb{R} \left (\boldsymbol{\chi}_{\{ 9 \}} \right )}, \omega \right ] \right )$}
+\addlegendentry{\scriptsize adjusted $\ell$}
+\addlegendentry{\scriptsize boundary}
 
 \end{groupplot}
 

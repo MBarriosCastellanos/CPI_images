@@ -31,6 +31,16 @@
         },
     height=60mm,
     width=85mm,
+    legend cell align={left},
+    legend style={
+      fill opacity=0.8,
+      draw opacity=1,
+      text opacity=1,
+      at={(0.01,0.85)},
+      anchor=north west,
+      draw=lightgray204,
+      font=\tiny,
+    },
   ]
   \path [draw=darkgray178, semithick, dash pattern=on 1.5pt off 2.475pt, line width=1.5]
     (axis cs:35.1586930982132,5.07459122549029)
@@ -1052,6 +1062,7 @@
     99.9 7.17925339693301
     100 7.17925339761863
   };
+  \addlegendentry{\tiny sigmoid adjusted}
   \addplot [semithick, black, mark=square, mark size=1.5, mark options={solid}, only marks]
   table {%
     19.9235855845995 5.09512914161706
@@ -1104,6 +1115,7 @@
     93.9375353925797 7.15832426875383
     94.7612592188959 7.14965541739758
   };
+  \addlegendentry{\tiny experimental data}
   \addplot [semithick, darkgray178, mark=x, mark size=3, mark options={solid}, only marks]
   table {%
     44.174131924793 6.12692232175566
@@ -1189,6 +1201,16 @@
   ytick = {0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 0.14, 0.16},
   height=60mm,
   width=85mm,
+  legend cell align={left},
+  legend style={
+    fill opacity=0.8,
+    draw opacity=1,
+    text opacity=1,
+    at={(0.8,0.85)},
+    anchor=north west,
+    draw=lightgray204,
+    font=\tiny,
+  },
   ]
   \addplot [semithick, sienna1279963, solid, line width=1.5]
   table {%
@@ -2194,6 +2216,7 @@
     99.9 6.97008641681643e-09
     100 6.74347426054205e-09
   };
+  \addlegendentry{\tiny $h'$}
 \end{axis}
 
 \end{tikzpicture}

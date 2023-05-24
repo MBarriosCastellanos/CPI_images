@@ -5,7 +5,7 @@ import glob
 #%%
 files = glob.glob('*.*'); print('len files = %s'%len(files))
 for j in ['.py', '.tex', 
-  '.pdf'
+  #'.pdf'
   ]:
   files = [i for i in files if i[-len(j):]!=j]
   print('len files = %s without %s'%(len(files), j))
